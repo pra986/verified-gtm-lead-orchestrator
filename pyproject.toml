@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verified-gtm-lead-orchestrator"
+version = "0.1.0"
+description = "Project 11: Go-to-market lead research and Pipedrive CRM agent with Firecrawl prompt-injection sanitization, canonical domain deduplication, and outreach approval gates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pydantic>=2.6.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
